@@ -38,19 +38,16 @@ Firstly add/install dependencies to your package.json file
 
 then After than you have to sun this bellow command for json server install in localmachine/pc
 
-npm install -g json-server
+>npm install -g json-server
 
 it is to run db.json file
 
 to see this go to cmd open your current directory in which the db.json file present 
-and type command json-server --watch db.json
+and type command 
+>json-server --watch db.json
 
 
-for new creation of angular app 
-ng new my_app
-cd my_app
-ng serve
 
-for commponent it is
-ng g c component_name
+
+
 
