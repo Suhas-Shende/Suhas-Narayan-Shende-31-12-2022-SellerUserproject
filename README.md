@@ -25,3 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+for new creation of angular app 
+ng new my_app
+cd my_app
+ng serve
+## How Run code
+Firstly add/install dependencies to your package.json file 
+
+then After than you have to sun this bellow command for json server install in localmachine/pc
+
+npm install -g json-server
+
+it is to run db.json file
+
+to see this go to cmd open your current directory in which the db.json file present 
+and type command json-server --watch db.json
+
+
+for new creation of angular app 
+ng new my_app
+cd my_app
+ng serve
+
+for commponent it is
+ng g c component_name
+

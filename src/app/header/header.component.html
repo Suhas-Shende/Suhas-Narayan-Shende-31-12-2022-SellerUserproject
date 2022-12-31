@@ -1,0 +1,67 @@
+<nav class="navbar sticky-top navbar-dark" style="background-color: #e3f2fd">
+  <span class="navbar-brand mb-0 h1">
+    <img src="./assets/brandimmages.jpg" class="brandlogo" />brandlogo
+  </span>
+  <!-- <div *ngIf="menuType!=='seller'" class="nav-search">
+    <input type="text"
+    #searchInput
+    (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
+    <button (click)="submitSearch(searchInput.value)" >Search</button>
+    <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  </div> -->
+  
+    <ul  class="list">
+      <li><a routerLink="">Home</a></li>
+      
+      <li *ngIf="graphShow" ><a routerLink="tables">tables</a></li>
+      <li  *ngIf="graphShow"><a routerLink="charts">charts</a></li>
+    
+      
+
+      <li *ngIf="loginHeads"><a routerLink="seller-auth">Sellerlogin</a></li>
+      <li *ngIf="loginHeads" ><a routerLink="user-auth">Userlogin</a></li>
+      <li  *ngIf="admin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg><a style="color: #0dca16;">{{ sellerName | titlecase }}</a>
+      </li>
+      
+      <li *ngIf="user"  >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg><a  style="color: #0dca16;">{{ userName | titlecase }}</a>
+      </li>
+    
+      <li *ngIf="admin"><a style="color: #0d20ca;" (click)="logout()">sellerLogout</a></li>
+      <li  *ngIf="user" ><a style="color: #0d20ca;" (click)="userLogout()">userLogout</a></li>
+      <!-- <li><a href="#">Cart({{cartItems}})</a></li> -->
+    </ul>
+    <!-- <ul *ngSwitchCase="'user'" class="list">
+  
+      <li><a routerLink="">Home</a></li>
+      <li>
+        <a>{{ userName | titlecase }}</a>
+      </li>
+    
+      <li><a (click)="userLogout()">Logout</a></li>
+
+    </ul> -->
+    <!-- <ul class="list">
+      <li>
+        <a>{{ sellerName | titlecase }}</a>
+      </li>
+    
+      <li><a routerLink="charts">charts</a></li>
+    
+      <li>
+        <a href="#">{{ sellerName | titlecase }}</a>
+      </li>
+    </ul> -->
+ 
+</nav>

@@ -1,0 +1,28 @@
+#divChart{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+#divChart2{
+    display: block;
+    width: 400px;
+    height: 400px;
+	
+}#divChart3{
+    display: block;
+    width: 400px;
+    height: 400px;
+	
+}#divChart4{
+    display: block;
+    width: 400px;
+    height: 400px;
+	
+}
+.content{
+	display: flex;
+}
+button{
+	margin:0;
+	float: left;
+}
