@@ -46,6 +46,8 @@ to see this go to cmd open your current directory in which the db.json file pres
 and type command 
 >json-server --watch db.json
 
+table done
+
 
 
 
