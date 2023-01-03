@@ -65,6 +65,12 @@
       "email": "abc@gmail.com",
       "password": "abc@123",
       "id": 12
+    },
+    {
+      "name": "Sahil",
+      "email": "sahil@gmail.com",
+      "password": "abc123",
+      "id": 13
     }
   ],
   "users": [
@@ -97,6 +103,12 @@
       "email": "himanshu@gmail.com",
       "password": "abc123",
       "id": 5
+    },
+    {
+      "name": "sahil",
+      "email": "sahilbhange@user.com",
+      "password": "abc123",
+      "id": 6
     }
   ]
 }

@@ -1,8 +1,29 @@
 table {
-    width: 100%;
-  }
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
+  width: 100%;
+  padding: 30px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.element{
+
+  padding-top: 30px;
+}
+.seller{
+
+  padding-top: 30px;
+}
+.user{
+  padding-top: 30px;
+  padding-bottom: 30pxs;
+}
+.make-green{
+  background-color: #c71e1e;
+} .make-yellow{
+  background-color: #c7c11e;
+} .make-pink{
+  background-color: #c71eae;
+}
